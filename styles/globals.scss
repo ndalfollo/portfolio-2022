@@ -74,21 +74,3 @@ p {
 .statut {
   font-style: italic;
 }
-
-.cursor {
-  --size: 20px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: var(--size);
-  width: var(--size);
-  background-color: white;
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  transform: translate3d(
-    calc(100vw * var(--cursor-x) - var(--size) / 2), 
-    calc(100vh * var(--cursor-y) - var(--size) / 2), 
-    0);
-  pointer-events: none;
-  z-index: 100;
-}
