@@ -3,8 +3,11 @@ import styles from '../styles/Home.module.scss'
 import Head from './Components/Head'
 import Nav from './Components/Nav'
 import Cursor from './Components/Cursor'
+import { useEffect } from 'react'
 
 export default function Home() {
+
+  useEffect(() => {
   const lerp = (a, b, n) => (1 - n) * a + n * b;
 
 class Cursor {
@@ -50,6 +53,7 @@ class Cursor {
     this.raf = requestAnimationFrame(this.render);
   }
 }
+})
 
 new Cursor();
 
